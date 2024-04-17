@@ -1,0 +1,79 @@
+﻿@{
+    ViewData["Title"] = "Welcome to Student List";
+}
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+
+        .header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+    .content {
+        background-color: #fff;
+        padding: 20px;
+        margin-top: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+        .content p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+    .button-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+        .button:hover {
+            background-color: #555;
+        }
+</style>
+<div class="container">
+    <div class="header">
+        <h1>Welcome to Student List</h1>
+    </div>
+    <div class="content">
+        <p>Welcome to the Student List website! Here you can manage and view information about students.</p>
+        <p>Use the navigation menu to explore different features of the website:</p>
+        <ul class="button-list">
+            <li><a href="/students" class="button">View Student List</a></li>
+            <li><a href="/students/add" class="button">Add New Student</a></li>
+            <li><a href="/students/search" class="button">Search Students</a></li>
+        </ul>
+    </div>
+</div>
